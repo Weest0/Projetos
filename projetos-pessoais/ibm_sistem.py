@@ -8,7 +8,7 @@ while(True):
 	comm=str(input('\n=>> '))
 	
 	if ( comm == 'help'): #ajuda
-		print('\ncreate - cria um arquivo.\ncreatept - cria uma pasta.\ncalc - para chamar a calculadora. \nconfig - acessa as configurações do sistema.')
+		print('\ncreate - cria um arquivo.\ncreatept - cria uma pasta.\ncalc - para chamar a calculadora. \nconfig - acessa as configurações do sistema.\noff - para desligar')
 	
 	elif (comm == 'calc'): #calculadora!!!!!!
 		
@@ -34,7 +34,7 @@ while(True):
 			print('\n--------|X|---------\n\nERROR!!\nTENTE NOVAMENTE:')
 			controle=1
 
-		while (controle == 1):
+		while (True):
 			print('\n(+ para soma.)\n(- para subtração.)\n(* para multiplicação.)\n(/ para divisão.)')
 			ope=str(input('\nInsira o operador: '))
 			
@@ -60,19 +60,21 @@ while(True):
 	elif(comm == 'config'):
 		while(True):
 			conf_1='Sim'
-			print('\n-------------------------------------\nConfirme para salvar as configurações.\n-------------------------------------\nSelecione um número para entrar na configuração \n-------------------------------------\nexit - para sair \n-------------------------------------\n\n   [1] - Configurações de senha. \n'.format(conf_1))
+			print('\n------------------------------------------------\nConfirme para salvar as configurações.\n------------------------------------------------\nSelecione um número para entrar na configuração. \n------------------------------------------------\nexit - para sair. \n------------------------------------------------\n\n   [1] - Configurações de senha. \n'.format(conf_1))
 			conf=str(input('\n(config)=>> '))
 
 			if(conf == '1'):
 				while(True):
-					print('\nSeção [Senhas].\n [1] - Iniciar com senha: {}'.format(conf_1))
-					conf=str(input('\n(config-senhas)=>> '))
+					print('\nSeção [Senhas]:\n\n [1] - Iniciar com senha: {}'.format(conf_1))
+					conf=str(input('\n(config-[senhas])=>> '))
+					if(conf == '1'):
+						conf_1=str(input('- Iniciar com senha? [Sim|Não]\n\n> '))
 					if(conf == 'exit'):
 						break
 			
 			if(conf == 'exit'):
 				print('\nSalve antes de sair. [S|N]')
-				conf=str(input('\nSalvar?\n\n(config)==> '))
+				conf=str(input('\nSalvar?\n\n(config)==> ').upper())
 				
 				if(conf == 'S'):
 					print('\nSALVO')
@@ -81,6 +83,6 @@ while(True):
 					print('\nOk')
 					break
 
-	elif(comm == 'exit'): #sair
+	elif(comm == 'off'): #sair
 		break
 print('\nBye')
