@@ -34,7 +34,7 @@ while(True):
 			print('\n--------|X|---------\n\nERROR!!\nTENTE NOVAMENTE:')
 			controle=1
 
-		while (True):
+		while (controle == 1):
 			print('\n(+ para soma.)\n(- para subtração.)\n(* para multiplicação.)\n(/ para divisão.)')
 			ope=str(input('\nInsira o operador: '))
 			
@@ -60,12 +60,12 @@ while(True):
 	elif(comm == 'config'):
 		while(True):
 			conf_1='Sim'
-			print('\n------------------------------------------------\nConfirme para salvar as configurações.\n------------------------------------------------\nSelecione um número para entrar na configuração. \n------------------------------------------------\nexit - para sair. \n------------------------------------------------\n\n   [1] - Configurações de senha. \n'.format(conf_1))
+			print('\n------------------------------------------------\nConfirme para salvar as configurações.\n------------------------------------------------\nSelecione um número para entrar na configuração. \n------------------------------------------------\nexit - para sair. \n------------------------------------------------\n\n   [1] - Configurações de senha. \n   [2] - Configurações de interface.'.format(conf_1))
 			conf=str(input('\n(config)=>> '))
 
 			if(conf == '1'):
 				while(True):
-					print('\nSeção [Senhas]:\n\n [1] - Iniciar com senha: {}'.format(conf_1))
+					print('\nSeção [Senhas]:\n\n [1] - Iniciar com senha: {}\n [2] - senha: ****'.format(conf_1))
 					conf=str(input('\n(config-[senhas])=>> '))
 					if(conf == '1'):
 						conf_1=str(input('- Iniciar com senha? [Sim|Não]\n\n> '))
