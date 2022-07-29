@@ -1,14 +1,19 @@
+traco = str('-')
+espaco = str(' ')
+controle = str(0)
+
 print(' \n ▀█▀ ▒█▀▀█ ▒█▀▄▀█ 　 ░░ 　 ▒█▀▀▀█ ▀█▀ ▒█▀▀▀█ ▀▀█▀▀ ▒█▀▀▀ ▒█▀▄▀█ \n ▒█░ ▒█▀▀▄ ▒█▒█▒█ 　 ▀▀ 　 ░▀▀▀▄▄ ▒█░ ░▀▀▀▄▄ ░▒█░░ ▒█▀▀▀ ▒█▒█▒█ \n ▄█▄ ▒█▄▄█ ▒█░░▒█ 　 ░░ 　 ▒█▄▄▄█ ▄█▄ ▒█▄▄▄█ ░▒█░░ ▒█▄▄▄ ▒█░░▒█ \n')
 
 print(' BEM VINDO!! \n\n run - help (para saber todos os comandos.)')
 
 while(True):
-	controle = 0
+	
 
 	comm=str(input('\n=>> '))
 	
 	if ( comm == 'help'): #ajuda
-		print('\ncreate - cria um arquivo.\ncreatept - cria uma pasta.\ncalc - para chamar a calculadora. \nconfig - acessa as configurações do sistema.\noff - para desligar')
+		print(f'\n{traco*48}\n| create - cria um arquivo.{espaco*20}|\n{traco*48}\n| creatept - cria uma pasta.{espaco*19}|\n{traco*48}\n| calc - para chamar a calculadora.{espaco*12}|\n{traco*48}\n| config - acessa as configurações do sistema.{espaco}|\n{traco*48}\n| off - para desligar{espaco*26}|\n{traco*48}')
+
 	
 	elif (comm == 'calc'): #calculadora!!!!!!
 		
