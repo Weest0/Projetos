@@ -65,7 +65,7 @@ while(True):
 	elif(comm == 'config'):
 		while(True):
 			conf_1='Sim'
-			print('\n------------------------------------------------\nConfirme para salvar as configurações.\n------------------------------------------------\nSelecione um número para entrar na configuração. \n------------------------------------------------\nexit - para sair. \n------------------------------------------------\n\n   [1] - Configurações de senha. \n   [2] - Configurações de interface.'.format(conf_1))
+			print(f'\n{traco*52}\n| Confirme para salvar as configurações.{espaco*11}|\n{traco*52}\n| Selecione um número para entrar na configuração.{espaco}|\n{traco*52}\n| exit - para sair.{espaco*32}|\n{traco*52}\n\n   [1] - Configurações de senha. \n   [2] - Configurações de interface.'.format(conf_1))
 			conf=str(input('\n(config)=>> '))
 
 			if(conf == '1'):
