@@ -14,6 +14,9 @@ while (True):
 	
 	if(modo == 'A'):
 		aposta=float(input('Qual será o valor da aposta? '))
+		while(aposta > saldo):
+			print('\nO valor do seu saldo e inferior ao da aposta.')
+			aposta=float(input('\nQual será o valor da aposta? '))
 		print('\nEscolha um numero de 1 a 10.')
 		num_apst=int(input('Numero: '))
 		aleat = random.randint(1, 10)
@@ -45,6 +48,9 @@ while (True):
 
 	if(modo == 'B'):
 		aposta=float(input('Qual será o valor da aposta? '))
+		while(aposta > saldo):
+			print('\nO valor do seu saldo e inferior ao da aposta.')
+			aposta=float(input('\nQual será o valor da aposta? '))
 		print('\nEscolha um numero de 1 a 30.')
 		num_apst=int(input('Numero: '))
 		aleat = random.randint(1, 30)
@@ -77,9 +83,16 @@ while (True):
 
 	if(modo == 'C'):
 		aposta=float(input('Qual será o valor da aposta? '))
+		while(aposta > saldo):
+			print('\nO valor do seu saldo e inferior ao da aposta.')
+			aposta=float(input('\nQual será o valor da aposta? '))
 		print('\nEscolha um numero de 1 a 100.')
 		num_apst=int(input('Numero: '))
 		aleat = random.randint(1, 100)
+		while(aposta > saldo):
+			print('O valor do seu saldo e inferior ao da aposta.')
+			aposta=float(input('Qual será o valor da aposta? '))
+
 		if(num_apst == aleat):
 			lucro = (aposta * 15)
 			saldo = saldo + lucro
@@ -105,6 +118,9 @@ while (True):
 				saldo = (saldo - aposta)
 				print('\n ░█──░█ ░█▀▀▀█ ░█─░█ ── ░█─── ░█▀▀▀█ ░█▀▀▀█ ░█▀▀▀ \n ░█▄▄▄█ ░█──░█ ░█─░█ ▀▀ ░█─── ░█──░█ ─▀▀▀▄▄ ░█▀▀▀ \n ──░█── ░█▄▄▄█ ─▀▄▄▀ ── ░█▄▄█ ░█▄▄▄█ ░█▄▄▄█ ░█▄▄▄ ')
 				print(f'\n\nO numero sorteado foi: {aleat}\n\nPerdeu: {aposta} {dinh}\n\nSaldo Atual: {saldo} {dinh}')
+	if(saldo == 0):
+		print('\nVocê zerou o seu saldo. Então não é mais possivel fazer apostas.')
+		break
 
 	if(modo == 'E'):
 		break
