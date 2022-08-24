@@ -1,10 +1,10 @@
 <h1 align="center"> Meus projetos pessoais </h1>
 
-![Quantidade de projetos em andamento.](https://img.shields.io/badge/PROJETOS%20EM%20ANDAMENTO-3-green) ![Quantidade de projetos pausados.](https://img.shields.io/badge/PROJETOS%20PAUSADOS-0-red)
+<h4 align="center"> 
+    :construction:  Projeto em andamento  :construction:
+</h4>
 
-## Índice 
-* [Descrição](#descrição)
-* [Projetos](#projetos)
+![Quantidade de projetos em andamento.](https://img.shields.io/badge/PROJETOS%20EM%20ANDAMENTO-3-green) ![Quantidade de projetos pausados.](https://img.shields.io/badge/PROJETOS%20PAUSADOS-0-red)
 
 ## Descrição
 Esses são os projetos que venho trabalhando atualmente, são feitos com o proposito de melhorar minhas habilidades com programação. Os projetos são atualizados com certa frequencia, quanto mais aprendo mais eu melhoro os programas.
