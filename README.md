@@ -1,4 +1,4 @@
-<h1 align="center"> Meus projetos pessoais </h1>
+<h1 align="center"> :hammer: Meus projetos pessoais </h1>
 
 <h4 align="center"> 
     :construction:  Projeto em andamento  :construction:
