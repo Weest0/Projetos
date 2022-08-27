@@ -8,7 +8,7 @@
 
 ![Quantidade de projetos em andamento.](https://img.shields.io/badge/PROJETOS%20EM%20ANDAMENTO-3-green) ![Quantidade de projetos pausados.](https://img.shields.io/badge/PROJETOS%20PAUSADOS-0-red)
 
-teste - <i class="devicon-python-plain"></i>
+<i class="devicon-python-plain"></i>
 
 ## Descrição
 Esses são os projetos que venho trabalhando atualmente, são feitos com o proposito de melhorar minhas habilidades com programação. Os projetos são atualizados com certa frequencia, quanto mais aprendo mais eu melhoro os programas.
