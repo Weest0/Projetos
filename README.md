@@ -1,12 +1,8 @@
 <h1 align="center"> :hammer: Meus projetos pessoais </h1>
 
-<h4 align="center"> 
-    :construction:  Projeto em andamento  :construction:
-</h4>
-
 ![Quantidade de projetos em andamento.](https://img.shields.io/badge/PROJETOS%20EM%20ANDAMENTO-3-green) ![Quantidade de projetos pausados.](https://img.shields.io/badge/PROJETOS%20PAUSADOS-0-red)
 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"/> 
+<img id="python_logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="25" width="25"/> <img id="kisspng-microsoft-visual" src="https://user-images.githubusercontent.com/105452648/187048730-4f62aff5-a0cb-4608-89ab-c8dc8a3ae91f.png" height="25" width="25"/>
 
 ## Descrição
 Esses são os projetos que venho trabalhando atualmente, são feitos com o proposito de melhorar minhas habilidades com programação. Os projetos são atualizados com certa frequencia, quanto mais aprendo mais eu melhoro os programas.
@@ -14,7 +10,7 @@ Esses são os projetos que venho trabalhando atualmente, são feitos com o propo
 * **Tabela** 
     * Tem o objetivo de fazer um programa criar uma tabela com as exigencias do usuario. (1% concluído)
 * **Sistema IBM**
-    * Inspirado nos antigos sistemas de computadores 8-bit usando a linguagem `Simplic`, tentando fazer algo similar com `Python`. (4% concluído)
+    * Inspirado nos antigos sistemas de computadores 8-bit usando a linguagem `Basic`, tentando fazer algo similar com `Python`. (4% concluído)
 * **Jogo da roleta** 
     * Criado tendo como inspiração, um jogo de cassino, no qual o usuario aposta em que número a esfera irá cair. (70% concluído)
 
