@@ -12,7 +12,7 @@ while(True):
 	comm=str(input('\n=>> '))
 	
 	if ( comm == 'help'): #ajuda
-		print(f'\n{traco*48}\n| create - cria um arquivo.{espaco*20}|\n{traco*48}\n| creatept - cria uma pasta.{espaco*19}|\n{traco*48}\n| calc - para chamar a calculadora.{espaco*12}|\n{traco*48}\n| config - acessa as configurações do sistema.{espaco}|\n{traco*48}\n| off - para desligar{espaco*26}|\n{traco*48}')
+		print(f'\n{traco*48}\n| file - cria um arquivo.{espaco*22}|\n{traco*48}\n| creatept - cria uma pasta.{espaco*19}|\n{traco*48}\n| calc - para chamar a calculadora.{espaco*12}|\n{traco*48}\n| config - acessa as configurações do sistema.{espaco}|\n{traco*48}\n| off - para desligar{espaco*26}|\n{traco*48}')
 
 	
 	elif (comm == 'calc'): #calculadora!!!!!!
@@ -87,6 +87,20 @@ while(True):
 				elif(conf == 'N'):
 					print('\nOk')
 					break
+	elif(comm == 'file'): #mexer com arquivos
+		print('\n[1] - Para criar um arquivo. \n[2] - Para ler um arquivo.')
+		arq = int(input('\n(file)=> '))
+		if(arq == 1):
+			nome_arq = str(input('\nNome do arquivo com formato: '))
+			info = str(input('\n'))
+			criar = open(f'{nome_arq}','w')
+			dados = (criar.write(f'{info}'))
+			criar.close()
+		elif(arq == 2):
+			nome_arq = str(input('\nInsira o nome do arquivo: '))
+			ler = open(f'{nome_arq}','r')
+			print(f'\n{traco*77}\n{ler.read(1000)}\n{traco*77}')
+
 
 	elif(comm == 'off'): #sair
 		break
