@@ -21,6 +21,6 @@ Esses são os projetos que venho trabalhando atualmente, são feitos com o propo
 * [Projeto da Tabela](https://github.com/Weest0/Projetos/blob/master/projetos-pessoais/tabela.py)
 * [Projeto do Sistema IBM](https://github.com/Weest0/Projetos/blob/master/projetos-pessoais/ibm_sistem.py)
 * [Projeto do Jogo da Roleta](https://github.com/Weest0/Projetos/blob/master/projetos-pessoais/roleta_game.py)
-* [Sortear alunos](https://github.com/Weest0/Projetos/blob/master/projetos-pessoais/sortear_alunos.phttps://github.com/Weest0/Projetos/blob/master/projetos-pessoais/sortear_alunos.pyy)
+* [Sortear alunos](https://github.com/Weest0/Projetos/blob/master/projetos-pessoais/sortear_alunos.py)
 
 
