@@ -13,12 +13,14 @@ Esses são os projetos que venho trabalhando atualmente, são feitos com o propo
     * Inspirado nos antigos sistemas de computadores 8-bit usando a linguagem `Basic`, tentando fazer algo similar com `Python`. (4% concluído)
 * **Jogo da roleta** 
     * Criado tendo como inspiração, um jogo de cassino, no qual o usuario aposta em que número a esfera irá cair. (70% concluído)
-
+* **Sortear Alunos**
+    * O Algoritmo irá sortear um nome de aluno em um arquivo `aluno.txt` depois apagar o mesmo para não sortea-lo novamente, além de sortear uma questão.
 
 
 ## Projetos
 * [Projeto da Tabela](https://github.com/Weest0/Projetos/blob/master/projetos-pessoais/tabela.py)
 * [Projeto do Sistema IBM](https://github.com/Weest0/Projetos/blob/master/projetos-pessoais/ibm_sistem.py)
 * [Projeto do Jogo da Roleta](https://github.com/Weest0/Projetos/blob/master/projetos-pessoais/roleta_game.py)
+* [Sortear alunos](https://github.com/Weest0/Projetos/blob/master/projetos-pessoais/sortear_alunos.phttps://github.com/Weest0/Projetos/blob/master/projetos-pessoais/sortear_alunos.pyy)
 
 
