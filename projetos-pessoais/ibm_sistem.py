@@ -2,6 +2,11 @@ traco = str('-')
 espaco = str(' ')
 controle = str(0)
 
+criar_config = open('config.txt','w')
+w = criar_config.write('Sim\n1507')
+criar_config.close()
+
+
 print(' \n ▀█▀ ▒█▀▀█ ▒█▀▄▀█ 　 ░░ 　 ▒█▀▀▀█ ▀█▀ ▒█▀▀▀█ ▀▀█▀▀ ▒█▀▀▀ ▒█▀▄▀█ \n ▒█░ ▒█▀▀▄ ▒█▒█▒█ 　 ▀▀ 　 ░▀▀▀▄▄ ▒█░ ░▀▀▀▄▄ ░▒█░░ ▒█▀▀▀ ▒█▒█▒█ \n ▄█▄ ▒█▄▄█ ▒█░░▒█ 　 ░░ 　 ▒█▄▄▄█ ▄█▄ ▒█▄▄▄█ ░▒█░░ ▒█▄▄▄ ▒█░░▒█ \n')
 
 print(' BEM VINDO!! \n\n run - help (para saber todos os comandos.)')
@@ -70,10 +75,22 @@ while(True):
 
 			if(conf == '1'):
 				while(True):
-					print('\nSeção [Senhas]:\n\n [1] - Iniciar com senha: {}\n [2] - senha: ****'.format(conf_1))
+
+					ler_config = open('config.txt','r')
+					r = ler_config.readlines()
+					ler_config.close()
+
+					print(f'\nSeção [Senhas]:\n\n [1] - Iniciar com senha: {r[0]}\n [2] - senha: {r[1]}')
 					conf=str(input('\n(config-[senhas])=>> '))
+
 					if(conf == '1'):
-						conf_1=str(input('- Iniciar com senha? [Sim|Não]\n\n> '))
+						r[0]=str(input('- Iniciar com senha? [Sim|Não]\n\n> '))
+						print(r[0])
+
+					trasf = ''.join(r)
+					novo_dado = open('config.txt','w')
+					dd = novo_dado.write(trasf)
+
 					if(conf == 'exit'):
 						break
 			
@@ -87,6 +104,7 @@ while(True):
 				elif(conf == 'N'):
 					print('\nOk')
 					break
+
 	elif(comm == 'file'): #mexer com arquivos
 		print('\n[1] - Para criar um arquivo. \n[2] - Para ler um arquivo.')
 		arq = int(input('\n(file)=> '))
@@ -100,6 +118,7 @@ while(True):
 			nome_arq = str(input('\nInsira o nome do arquivo: '))
 			ler = open(f'{nome_arq}','r')
 			print(f'\n{traco*77}\n{ler.read(1000)}\n{traco*77}')
+			ler.close()
 
 
 	elif(comm == 'off'): #sair
